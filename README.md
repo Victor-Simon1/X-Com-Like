@@ -50,3 +50,13 @@ https://opengameart.org/content/ruined-farmhouse
 rock : https://opengameart.org/content/tilling-texture-pack-13
 metal : https://opengameart.org/content/rusted-metal-texture-pack
 wood : https://opengameart.org/content/free-tiling-textures-pack-46
+shower curtains :https://sketchfab.com/3d-models/corner-shower-curtain-61b448368b3b439a80937048b3f9bb42
+mirror:https://sketchfab.com/3d-models/basic-wooden-wall-mirror-0ed67ac9af7e47a9ae7bb6bec89c01a4
+https://sketchfab.com/3d-models/small-kitchen-with-oven-e783d6d64f8c453ab534bdde715b210d
+
+Sound:
+https://opengameart.org/content/gun-reload-lock-or-click-sound
+https://opengameart.org/content/gun-sound-effects
+https://opengameart.org/content/chaingun-pistol-rifle-shotgun-shots
+https://opengameart.org/content/shotgun-shoot-reload
+https://opengameart.org/content/door-open-door-close-set
