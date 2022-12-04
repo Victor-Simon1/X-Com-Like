@@ -16,6 +16,8 @@
 -- pas reussit a import : https://www.turbosquid.com/fr/3d-models/free-christmas-scene-3d-model/566549
 
 -- interior --
+https://sketchfab.com/3d-models/game-ready-animated-closet-built-in-041ff9ca49ac4bcaa8e3f07417702c75#download
+https://sketchfab.com/3d-models/commode-ccd657ea77f247a88c579114b4690d3d
 https://opengameart.org/content/gift-box
 https://www.gamedevmarket.net/asset/christmas-tree-holiday-christmas/
 https://www.gamedevmarket.net/asset/breakable-seats/
