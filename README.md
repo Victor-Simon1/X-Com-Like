@@ -1,4 +1,5 @@
-Objectifs Terminés :
+# Semestre 1
+## Objectifs Terminés :
 - Map intérieur / extérieur
     - Sur 2 levels pour expérimenter le chargement de lvl
     - Thème noel
@@ -21,10 +22,10 @@ Objectifs Terminés :
 -Son
     - Son vent + Bruit moteur voiture 3D
 
-Prochain ajout :
-- Ajout portes dynamique dans la salle interieur 
-- Visibilité des déplacements + cone de vision
-- Gestion des statistique (PV, dégat, ...)
-
-Problèmes (en cours)
-- Les personnages n'ont pas la bonne rotation
+# Semestre 2
+## Ajouts
+- Effet caméra (rotaion + zoom)
+- Effet selection personnage 
+- Portes dynamics
+- Ajout sons (pas selon surface, porte)
+- Statistic (datatable : pv, dmg, ...)
