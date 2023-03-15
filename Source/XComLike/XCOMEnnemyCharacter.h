@@ -3,11 +3,11 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "GameFramework/Character.h"
+#include "XComCharacter.h"
 #include "XCOMEnnemyCharacter.generated.h"
 
 UCLASS()
-class XCOMLIKE_API AXCOMEnnemyCharacter : public ACharacter
+class XCOMLIKE_API AXCOMEnnemyCharacter : public AXComCharacter
 {
 	GENERATED_BODY()
 
