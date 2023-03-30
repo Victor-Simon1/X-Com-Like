@@ -12,3 +12,6 @@ void UItemHpBehavior::ConsumeItem(AActor* Player) {
 	//UItemBehavior::ConsumeItem(Player);
 }
 
+void UItemHpBehavior::MyOverlapItem()
+{
+}

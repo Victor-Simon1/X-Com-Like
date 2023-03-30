@@ -4,12 +4,14 @@
 
 #include "CoreMinimal.h"
 #include "UObject/NoExportTypes.h"
+#include <XComLike/XComHerosCharacter.h>
 #include "ItemBehavior.generated.h"
+
 
 /**
  * 
  */
-UCLASS()
+UCLASS(Blueprintable, EditInLineNew)
 class XCOMLIKE_API UItemBehavior : public UObject
 {
 	GENERATED_BODY()
@@ -17,7 +19,10 @@ class XCOMLIKE_API UItemBehavior : public UObject
 public:
 	UItemBehavior();
 
-	void ConsumeItem(AActor* Player);
+	void ConsumeItem(AXComHerosCharacter* Player);
+
+	UFUNCTION(BlueprintCallable)
+	virtual void MyOverlapItem();
 	
 };
 

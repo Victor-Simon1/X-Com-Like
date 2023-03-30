@@ -10,7 +10,7 @@
 /**
  * 
  */
-UCLASS()
+UCLASS(Blueprintable, EditInLineNew)
 class XCOMLIKE_API UItemHpBehavior : public UItemBehavior
 {
 	GENERATED_BODY()
@@ -19,4 +19,5 @@ public:
 	UItemHpBehavior();
 
 	void ConsumeItem(AActor* Player);
+	void MyOverlapItem();
 };

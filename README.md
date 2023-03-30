@@ -25,7 +25,15 @@
 # Semestre 2
 ## Ajouts
 - Effet caméra (rotaion + zoom)
-- Effet selection personnage 
+- Effet selection personnage (decal)
 - Portes dynamics
 - Ajout sons (pas selon surface, porte)
-- Statistic (datatable : pv, dmg, ...)
+- Statistic (datatable : pv, dmg, ...) selon Roles : Tank, DPS, Support
+- UI : Stats, Log, Actions
+- Menu Principal : Jouer, cmd, Quitter
+- Items : Dmg, PV
+- Systeme Tour par Tour : 
+--- Déplacement : calcul cout sur navMesh
+--- Tir : Select Ennemi
+--- Items : Select items collecté
+
