@@ -3,3 +3,17 @@
 
 #include "XComHerosCharacter.h"
 
+/*
+ Event Select
+
+*/
+
+/*
+ Event UnSelect
+
+*/
+
+void AXComHerosCharacter::Tick(float DeltaTime) {
+
+
+}

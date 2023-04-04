@@ -13,5 +13,7 @@ UCLASS()
 class XCOMLIKE_API AXComHerosCharacter : public AXComCharacter
 {
 	GENERATED_BODY()
-	
+
+	void Tick(float DeltaTime) override;
+
 };
