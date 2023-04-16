@@ -6,16 +6,17 @@
 #include "GameFramework/Character.h"
 #include "Engine/DataTable.h"
 #include "Engine/Texture2D.h"
+#include "CharacterInterface.h"
 #include "XComCharacter.generated.h"
 
 UCLASS()
-class XCOMLIKE_API AXComCharacter : public ACharacter
+class XCOMLIKE_API AXComCharacter : public ACharacter, public ICharacterInterface
 {
 	GENERATED_BODY()
 
 public:
-	UPROPERTY(VisibleAnywhere,BlueprintReadWrite,Category="Stats")
-	float hp;
+	//UPROPERTY(VisibleAnywhere,BlueprintReadWrite,Category="Stats")
+	//float hp;
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
 	float hp_max;
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Stats2")
