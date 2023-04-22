@@ -5,7 +5,7 @@
 
 // Add default functionality here for any ICharacterInterface functions that are not pure virtual.
 
-void ICharacterInterface::RecoveryHP(double heal)
+void ICharacterInterface::RecoveryHP(double healing)
 {
 	if (this->hp + heal > this->hpMax) {
 		this->hp = this->hpMax;

@@ -8,7 +8,6 @@ AXCOMEnnemyCharacter::AXCOMEnnemyCharacter()
 {
  	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
-	//AXCOMEnnemyCharacter::EnnemiesTurn = false;
 }
 
 // Called when the game starts or when spawned
@@ -22,11 +21,7 @@ void AXCOMEnnemyCharacter::BeginPlay()
 void AXCOMEnnemyCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-	if (AXCOMEnnemyCharacter::EnnemiesTurn)
-	{
-		//ChooseOption();
-		//Play();
-	}
+
 
 }
 

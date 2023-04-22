@@ -16,4 +16,14 @@ class XCOMLIKE_API AXComHerosCharacter : public AXComCharacter
 
 	void Tick(float DeltaTime) override;
 
+public :
+	bool selected;
+	//bool playerTurn;
+	FVector oldLocation;
+	//AActor* target;
+	int currentZone;
+
+	//void Shoot();
+	//void CamToPlayer();
+
 };

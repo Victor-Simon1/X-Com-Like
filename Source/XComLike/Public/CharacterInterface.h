@@ -25,8 +25,14 @@ public:
 	double hpMax;
 	double hp;
 	double atk;
+	double heal;
+	double distShoot;
+	
+	//Texture2D picture;
+	//DataTableRowHandle data;
 
-	void RecoveryHP(double heal);
+	void RecoveryHP(double healing);
 	void TakeDmg(double dmg);
+
 
 };

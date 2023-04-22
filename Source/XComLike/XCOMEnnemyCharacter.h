@@ -12,8 +12,9 @@ class XCOMLIKE_API AXCOMEnnemyCharacter : public AXComCharacter
 	GENERATED_BODY()
 
 public:
-
-	static inline  bool EnnemiesTurn = false;
+	int maxActionPoint;
+	//enum type;
+	
 	// Sets default values for this character's properties
 	AXCOMEnnemyCharacter();
 
@@ -28,4 +29,6 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
+	//void GiveTurn();
+	//void InitBTInController();
 };
