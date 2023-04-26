@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "UObject/Interface.h"
+#include <Engine/DataTable.h>
 #include "CharacterInterface.generated.h"
 
 // This class does not need to be modified.
@@ -11,6 +12,8 @@ UINTERFACE(MinimalAPI)
 class UCharacterInterface : public UInterface
 {
 	GENERATED_BODY()
+public:
+
 };
 
 /**
@@ -22,17 +25,8 @@ class XCOMLIKE_API ICharacterInterface
 
 	// Add interface functions to this class. This is the class that will be inherited to implement this interface.
 public:
-	double hpMax;
-	double hp;
-	double atk;
-	double heal;
-	double distShoot;
-	
-	//Texture2D picture;
-	//DataTableRowHandle data;
 
 	void RecoveryHP(double healing);
 	void TakeDmg(double dmg);
-
 
 };

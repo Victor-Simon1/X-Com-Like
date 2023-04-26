@@ -12,6 +12,7 @@ class XCOMLIKE_API AXCOMEnnemyCharacter : public AXComCharacter
 	GENERATED_BODY()
 
 public:
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	int maxActionPoint;
 	//enum type;
 	

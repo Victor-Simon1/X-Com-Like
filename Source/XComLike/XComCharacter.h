@@ -15,20 +15,22 @@ class XCOMLIKE_API AXComCharacter : public ACharacter, public ICharacterInterfac
 	GENERATED_BODY()
 
 public:
-	//UPROPERTY(VisibleAnywhere,BlueprintReadWrite,Category="Stats")
-	//float hp;
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
-	float hp_max;
-	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Stats2")
-	float atk;
-	UPROPERTY(VisibleAnywhere, BlueprintReadWrite,Category="Stats")
-	float capacity;
+	double hpMax;
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
-	float dist_shoot;
+		double hp;
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
-	FDataTableRowHandle data_table;
+		double atk;
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
-	UTexture2D *picture;
+		double heal;
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
+		double distShoot;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		FDataTableRowHandle dataTable;
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
+		UTexture2D* picture;
+
 	// Sets default values for this character's properties
 	AXComCharacter();
 
@@ -42,5 +44,8 @@ public:
 
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+
+	void RecoveryHP(double healing);
+	void TakeDmg(double dmg);
 
 };

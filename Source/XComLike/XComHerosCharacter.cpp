@@ -2,6 +2,7 @@
 
 
 #include "XComHerosCharacter.h"
+#include <FonctionLibraryLog.h>
 
 /*
  Event Select
@@ -16,4 +17,17 @@
 void AXComHerosCharacter::Tick(float DeltaTime) {
 
 
+}
+
+void AXComHerosCharacter::Shoot() {
+
+	FVector dist = this->GetActorLocation()-target->GetActorLocation();
+	if (dist.Length() <= distShoot) {
+		ETypeLog enumLog = tEvent;
+		FString text = "shoot";
+		UFonctionLibraryLog::AddLog(enumLog, text);
+	}
+	else {
+		//log
+	}
 }

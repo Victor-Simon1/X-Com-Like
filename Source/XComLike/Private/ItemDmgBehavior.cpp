@@ -14,7 +14,7 @@ void UItemDmgBehavior::ConsumeItem(AXComHerosCharacter* player) {
 	//UItemBehavior::ConsumeItem(Player);
 	//Player.SetD
 	//Cast<AXComHerosCharacter>(player)->hp;
-	player->hp_max += 50;
+	player->hpMax += 50;
 
 }
 

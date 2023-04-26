@@ -17,13 +17,17 @@ class XCOMLIKE_API AXComHerosCharacter : public AXComCharacter
 	void Tick(float DeltaTime) override;
 
 public :
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
 	bool selected;
 	//bool playerTurn;
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
 	FVector oldLocation;
-	//AActor* target;
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
+	AActor* target;
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
 	int currentZone;
 
-	//void Shoot();
-	//void CamToPlayer();
+	void Shoot();
+
 
 };

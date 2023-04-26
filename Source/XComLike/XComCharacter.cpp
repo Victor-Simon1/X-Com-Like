@@ -39,3 +39,19 @@ void AXComCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 
 }
 
+
+void AXComCharacter::RecoveryHP(double healing)
+{
+	if (this->hp + healing > this->hpMax) {
+		this->hp = this->hpMax;
+	}
+	else {
+		this->hp += heal;
+	}
+}
+
+void AXComCharacter::TakeDmg(double dmg)
+{
+	this->atk += dmg;
+}
+
