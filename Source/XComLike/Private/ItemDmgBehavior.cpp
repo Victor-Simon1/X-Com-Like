@@ -1,7 +1,7 @@
 // Fill out your copyright notice in the Description page of Project Settings.
-
-#include "Kismet/GameplayStatics.h"
 #include "ItemDmgBehavior.h"
+#include "Kismet/GameplayStatics.h"
+
 #include <XComLike/XCOMGameInstance.h>
 #include <XComLike/XComHerosCharacter.h>
 

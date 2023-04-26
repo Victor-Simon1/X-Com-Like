@@ -21,7 +21,6 @@ void AXComCharacter::OnConstruction(const FTransform& Transform)
 void AXComCharacter::BeginPlay()
 {
 	Super::BeginPlay();
-	this->hp = 30;
 	
 }
 
