@@ -39,6 +39,16 @@ void AXComCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 }
 
 
+
+
+void AXComCharacter::DataToUI( float& Myhp,  float& Myatk,  float& Myheal, UTexture2D* &MyPicture)
+{
+	Myhp = hp;
+	Myatk = atk;
+	Myheal = heal;
+	MyPicture = picture;
+}
+
 void AXComCharacter::RecoveryHP(double healing)
 {
 	if (this->hp + healing > this->hpMax) {

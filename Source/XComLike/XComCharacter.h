@@ -44,7 +44,8 @@ public:
 
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
-
+	UFUNCTION(BlueprintCallable)
+	void DataToUI(float &Myhp, float &Myatk,float &Myheal, UTexture2D* &MyPicture);
 	void RecoveryHP(double healing);
 	void TakeDmg(double dmg);
 
