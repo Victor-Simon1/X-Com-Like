@@ -4,7 +4,9 @@
 
 #include "CoreMinimal.h"
 #include "Engine/GameInstance.h"
+#include <HerosSaveData.h>
 #include "XCOMGameInstance.generated.h"
+
 
 /**
  * 
@@ -23,8 +25,10 @@ public:
 	int healTotal;
 	UPROPERTY(EditAnywhere)
 	int degatRecusTotal;
-
-
+	//UPROPERTY(EditAnywhere)
+	//TArray<HerosSaveData> saveHeros;
 	void IncrementeScore();
+	UFUNCTION(BlueprintCallable)
+	void SavePlayerData();
 };
 
