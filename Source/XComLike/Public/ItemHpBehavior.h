@@ -18,6 +18,6 @@ class XCOMLIKE_API UItemHpBehavior : public UItemBehavior
 public:
 	UItemHpBehavior();
 
-	void ConsumeItem(AActor* Player);
+	void ConsumeItem(AXComHerosCharacter* Player) override;
 	void MyOverlapItem();
 };

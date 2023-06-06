@@ -6,6 +6,10 @@
 UItemBehavior::UItemBehavior() {
 
 }
+void UItemBehavior::ConsumeItem(AXComHerosCharacter* Player)
+{
+	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("Class mere"));
+}
 void UItemBehavior::MyOverlapItem()
 {
 

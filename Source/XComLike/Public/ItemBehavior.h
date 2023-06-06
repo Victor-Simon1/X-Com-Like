@@ -18,11 +18,14 @@ class XCOMLIKE_API UItemBehavior : public UObject
 
 public:
 	UItemBehavior();
-
-	void ConsumeItem(AXComHerosCharacter* Player);
+	UFUNCTION(BlueprintCallable)
+	virtual void ConsumeItem(AXComHerosCharacter* Player);
 
 	UFUNCTION(BlueprintCallable)
 	virtual void MyOverlapItem();
+
+protected:
+	float valuePourcent = 0.12;
 	
 };
 

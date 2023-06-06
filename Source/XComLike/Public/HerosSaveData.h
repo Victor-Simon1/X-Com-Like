@@ -4,17 +4,17 @@
 #include "Engine/DataTable.h"
 #include "CoreMinimal.h"
 
+#include <XComLike/XComHerosCharacter.h>
 /**
  * 
  */
 class XCOMLIKE_API HerosSaveData
 {
 public:
-	float hp;
-	float atk;
-	FDataTableRowHandle dataTable;
+	TArray<AActor*> arrayHeros;
 
 	HerosSaveData();
-	HerosSaveData(float hp,FDataTableRowHandle dataRow);
+	void HerosSaveActor(UWorld* world);
+	void HerosLoadActor(UWorld* world);
 	~HerosSaveData();
 };

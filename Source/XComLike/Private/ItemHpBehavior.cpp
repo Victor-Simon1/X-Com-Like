@@ -8,8 +8,12 @@ UItemHpBehavior::UItemHpBehavior() {
 	//Super();
 }
 
-void UItemHpBehavior::ConsumeItem(AActor* Player) {
-	//UItemBehavior::ConsumeItem(Player);
+void UItemHpBehavior::ConsumeItem(AXComHerosCharacter* player)
+{
+	//UItemBehavior::ConsumeItem(player);
+	player->hpMax += player->hpMax*valuePourcent;
+	player->hp += player->hpMax * valuePourcent;
+	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("Hp"));
 }
 
 void UItemHpBehavior::MyOverlapItem()
