@@ -52,3 +52,8 @@ https://opengameart.org/content/chaingun-pistol-rifle-shotgun-shots
 https://opengameart.org/content/shotgun-shoot-reload
 https://opengameart.org/content/door-open-door-close-set
 https://www.zapsplat.com/
+
+weapons :
+https://sketchfab.com/3d-models/low-poly-ak-205-6886a1dc98b4411fa74468bdfda9e8e2
+https://sketchfab.com/3d-models/low-poly-ak-109-8f701898b61f4ae19547af53acedafd9
+https://sketchfab.com/3d-models/low-poly-akm-849b7cdf8622487485febc40db89e734

@@ -14,8 +14,9 @@
 
 */
 
-void AXComHerosCharacter::Tick(float DeltaTime) {
-
+void AXComHerosCharacter::Tick(float DeltaTime) 
+{
+	Super::Tick(DeltaTime);
 
 }
 

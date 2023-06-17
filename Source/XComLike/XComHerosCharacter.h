@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "XComCharacter.h"
+#include "XCOMEnnemyCharacter.h"
 #include "XComHerosCharacter.generated.h"
 
 /**
@@ -23,10 +24,10 @@ public :
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
 	FVector oldLocation;
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
-	AActor* target;
+	AXCOMEnnemyCharacter* target;
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
 	int currentZone;
-
+	
 	void Shoot();
 
 

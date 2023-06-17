@@ -25,12 +25,14 @@ public:
 		double heal;
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
 		double distShoot;
-
+	//UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
+		//AActor* target;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		FDataTableRowHandle dataTable;
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
 		UTexture2D* picture;
-
+	
+	static int maxActionPoints;
 	// Sets default values for this character's properties
 	AXComCharacter();
 
@@ -46,7 +48,12 @@ public:
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 	UFUNCTION(BlueprintCallable)
 	void DataToUI(float &Myhp, float &Myatk,float &Myheal, UTexture2D* &MyPicture);
+	UFUNCTION(BlueprintCallable)
+	void GetDamage(int dmg);
 	void RecoveryHP(double healing);
 	void TakeDmg(double dmg);
+	UFUNCTION(BlueprintCallable)
+	void SetMaxActionPoint(int value);
+
 
 };

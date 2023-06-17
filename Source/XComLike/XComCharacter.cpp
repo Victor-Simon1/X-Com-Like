@@ -63,4 +63,16 @@ void AXComCharacter::TakeDmg(double dmg)
 {
 	this->atk += dmg;
 }
+//take damage from someone and verify if is dying
+void AXComCharacter::GetDamage(int damage)
+{
+	this->hp -= damage;
+	//if character die
+	//if (this->hp <= 0)p;
+}
 
+int AXComCharacter::maxActionPoints = 5;
+void AXComCharacter::SetMaxActionPoint(int value)
+{
+	maxActionPoints = value;
+}
