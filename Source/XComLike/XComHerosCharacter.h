@@ -29,6 +29,7 @@ public :
 	int currentZone;
 	
 	void Shoot();
+	bool IsEndOfTurn(int actionPoints);
 
 
 };
