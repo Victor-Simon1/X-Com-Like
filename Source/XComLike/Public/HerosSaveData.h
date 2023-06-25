@@ -1,20 +1,26 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #pragma once
-#include "Engine/DataTable.h"
-#include "CoreMinimal.h"
-
-#include <XComLike/XComHerosCharacter.h>
+//#include "Engine/DataTable.h"
+//#include "CoreMinimal.h"
+//#include <XComLike/XComHerosCharacter.h>
+//#include "HerosSaveData.generated.h"
 /**
  * 
  */
-class XCOMLIKE_API HerosSaveData
+/*
+UCLASS()
+class XCOMLIKE_API HerosSaveData : public UObject
 {
 public:
-	TArray<AActor*> arrayHeros;
-
-	HerosSaveData();
+	//TArray<AActor*> arrayHeros;
+	//AActor* actor;
+	FString name;
+	int hp;
+	int atk;
+	//HerosSaveData();
+	//HerosSaveData(FString name,int hp, int atk);
 	void HerosSaveActor(UWorld* world);
 	void HerosLoadActor(UWorld* world);
-	~HerosSaveData();
-};
+	//~HerosSaveData();
+};*/

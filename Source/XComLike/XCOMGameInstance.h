@@ -4,7 +4,9 @@
 
 #include "CoreMinimal.h"
 #include "Engine/GameInstance.h"
+#include <../XComHerosCharacter.h>
 #include <HerosSaveData.h>
+#include <DataBetweenLevel.h>
 #include "XCOMGameInstance.generated.h"
 
 
@@ -17,18 +19,27 @@ class XCOMLIKE_API UXCOMGameInstance : public UGameInstance
 	GENERATED_BODY()
 
 public:
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
 	int score;
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
 	int degatInfligeTotal;
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
 	int healTotal;
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
 	int degatRecusTotal;
-	//UPROPERTY(EditAnywhere)
-	//TArray<HerosSaveData> saveHeros;
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
+	TArray<AXComHerosCharacter*> herosCharacter;
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
+	TArray<UDataBetweenLevel*> saveHeros;
+
+	UPROPERTY(EditAnywhere)
+	TArray<int> spawnPoint;
 	void IncrementeScore();
 	UFUNCTION(BlueprintCallable)
 	void SavePlayerData();
+	UFUNCTION(BlueprintCallable)
+	void ShowPlayerData();
+	UFUNCTION(BlueprintCallable,BlueprintImplementableEvent)
+	void LoadPlayerData();
 };
 
