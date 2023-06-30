@@ -6,7 +6,14 @@
 #include <Kismet/GameplayStatics.h>
 #include "EngineUtils.h"
 #include "XComHerosCharacter.h"
+#include "FunctionLibraryTool.h"
 
+
+
+void UXCOMGameInstance::IncrementeScore()
+{
+	score += 10;
+}
 
 template<typename T>
 void FindAllActors(UWorld* World, TArray<T*>& Out)
@@ -17,14 +24,10 @@ void FindAllActors(UWorld* World, TArray<T*>& Out)
 	}
 }
 
-void UXCOMGameInstance::IncrementeScore()
-{
-	score += 10;
-}
-
 void UXCOMGameInstance::SavePlayerData()
 {
 	FindAllActors(GetWorld(), herosCharacter);
+	//UFunctionLibraryTool::Test();
 	UDataBetweenLevel* tempObj;
 	for (AXComHerosCharacter* hero : herosCharacter)
 	{

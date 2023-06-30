@@ -54,6 +54,7 @@ public:
 	void TakeDmg(double dmg);
 	UFUNCTION(BlueprintCallable)
 	void SetMaxActionPoint(int value);
-
-
+	void HealSub();
+	UFUNCTION(BlueprintCallable)
+	void HealActor(AXComCharacter *character);
 };

@@ -30,6 +30,7 @@ public :
 	
 	void Shoot();
 	bool IsEndOfTurn(int actionPoints);
-
+	UFUNCTION(BlueprintImplementableEvent)
+	void HealSub();
 
 };

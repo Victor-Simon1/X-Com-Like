@@ -2,7 +2,7 @@
 
 
 #include "XComCharacter.h"
-
+#include "XCOMEnnemyCharacter.h"
 // Sets default values
 AXComCharacter::AXComCharacter()
 {
@@ -76,3 +76,11 @@ void AXComCharacter::SetMaxActionPoint(int value)
 {
 	maxActionPoints = value;
 }
+
+void AXComCharacter::HealActor(AXComCharacter* character)
+{
+	character->hp +=this->heal;
+	if (character->hp > character->hpMax)character->hp = character->hpMax;
+}
+
+

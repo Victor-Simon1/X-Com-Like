@@ -37,3 +37,4 @@ bool AXComHerosCharacter::IsEndOfTurn(int actionsPoint)
 {
 	return actionsPoint == 0;
 }
+
