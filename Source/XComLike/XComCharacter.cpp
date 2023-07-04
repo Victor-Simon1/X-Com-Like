@@ -71,12 +71,6 @@ void AXComCharacter::GetDamage(int damage)
 	//if (this->hp <= 0)p;
 }
 
-int AXComCharacter::maxActionPoints = 5;
-void AXComCharacter::SetMaxActionPoint(int value)
-{
-	maxActionPoints = value;
-}
-
 void AXComCharacter::HealActor(AXComCharacter* character)
 {
 	character->hp +=this->heal;

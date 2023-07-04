@@ -28,6 +28,10 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
 	int degatRecusTotal;
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
+	int maxActionPoints;
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
+	int actionPoints;
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
 	TArray<AXComHerosCharacter*> herosCharacter;
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
 	TArray<UDataBetweenLevel*> saveHeros;
@@ -37,6 +41,12 @@ public:
 	void IncrementeScore();
 	UFUNCTION(BlueprintCallable)
 	void SavePlayerData();
+	UFUNCTION(BlueprintCallable)
+	int GetMaxActionPoint();
+	UFUNCTION(BlueprintCallable)
+	int GetActionPoint();
+	UFUNCTION(BlueprintCallable)
+	void SetActionPoint(int value);
 	UFUNCTION(BlueprintCallable)
 	void ShowPlayerData();
 	UFUNCTION(BlueprintCallable,BlueprintImplementableEvent)

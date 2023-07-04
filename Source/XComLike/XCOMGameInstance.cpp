@@ -48,3 +48,18 @@ void UXCOMGameInstance::ShowPlayerData()
 		GEngine->AddOnScreenDebugMessage(-1, 55.0f, FColor::Yellow, FString::Printf(TEXT("Heros  %f %f\n"),data->hp,data->atk));
 	}
 }
+
+int UXCOMGameInstance::GetMaxActionPoint()
+{
+	return maxActionPoints;
+}
+
+int UXCOMGameInstance::GetActionPoint()
+{
+	return actionPoints;
+}
+
+void UXCOMGameInstance::SetActionPoint(int value)
+{
+	actionPoints = value;
+}
