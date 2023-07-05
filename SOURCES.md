@@ -27,7 +27,7 @@ https://opengameart.org/content/lamp
 - mis : https://opengameart.org/content/gas-wall-lantern-3d-model
 https://sketchfab.com/3d-models/victorian-street-lamp-d4006d2762ab434cb262d46d69433f1f
 - mis : https://sketchfab.com/3d-models/park-facility-asset-1b99e093f1194aea921d4de4ca654800
-
+https://sketchfab.com/3d-models/leaf-tree-ps1-low-poly-d799c08100974e1ba352fcd646cb0694
 -- Other --
 caisse : https://www.turbosquid.com/fr/3d-models/container-3d-model-1405862
 
