@@ -9,5 +9,6 @@ UENUM(BlueprintType)
 enum ETypeLog {
 	tError,
 	tWarning, 
-	tEvent
+	tEvent,
+	tInfo
 };
