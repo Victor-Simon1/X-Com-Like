@@ -52,7 +52,8 @@ public:
 	void GetDamage(int dmg);
 	void RecoveryHP(double healing);
 	void TakeDmg(double dmg);
-	
+	UFUNCTION(BlueprintCallable)
+	bool ShootLuck();
 	void HealSub();
 	UFUNCTION(BlueprintCallable)
 	void HealActor(AXComCharacter *character);

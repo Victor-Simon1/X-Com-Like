@@ -3,6 +3,7 @@
 
 #include "XComCharacter.h"
 #include "XCOMEnnemyCharacter.h"
+#include "Math/UnrealMathUtility.h"
 // Sets default values
 AXComCharacter::AXComCharacter()
 {
@@ -62,6 +63,11 @@ void AXComCharacter::RecoveryHP(double healing)
 void AXComCharacter::TakeDmg(double dmg)
 {
 	this->atk += dmg;
+}
+bool AXComCharacter::ShootLuck()
+{
+	float rand = FMath::RandRange(0, 100);
+	return rand < 90.0;
 }
 //take damage from someone and verify if is dying
 void AXComCharacter::GetDamage(int damage)
