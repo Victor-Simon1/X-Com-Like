@@ -2,6 +2,7 @@
 
 
 #include "XComHerosCharacter.h"
+#include "Kismet/GameplayStatics.h"
 #include <FonctionLibraryLog.h>
 
 /*
@@ -36,5 +37,10 @@ void AXComHerosCharacter::Shoot() {
 bool AXComHerosCharacter::IsEndOfTurn(int actionsPoint)
 {
 	return actionsPoint == 0;
+}
+
+bool AXComHerosCharacter::IsPossess()
+{
+	return this == UGameplayStatics::GetPlayerPawn(GetWorld(),0);
 }
 

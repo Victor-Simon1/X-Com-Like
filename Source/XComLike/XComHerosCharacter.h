@@ -32,5 +32,7 @@ public :
 	bool IsEndOfTurn(int actionPoints);
 	UFUNCTION(BlueprintImplementableEvent)
 	void HealSub();
+	UFUNCTION(BlueprintCallable)
+	bool IsPossess();
 
 };

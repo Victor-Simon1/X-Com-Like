@@ -57,4 +57,6 @@ public:
 	void HealSub();
 	UFUNCTION(BlueprintCallable)
 	void HealActor(AXComCharacter *character);
+	UFUNCTION(BlueprintCallable)
+	bool IsDead();
 };

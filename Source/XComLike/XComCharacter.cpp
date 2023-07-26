@@ -4,6 +4,7 @@
 #include "XComCharacter.h"
 #include "XCOMEnnemyCharacter.h"
 #include "Math/UnrealMathUtility.h"
+#include <FonctionLibraryLog.h>
 // Sets default values
 AXComCharacter::AXComCharacter()
 {
@@ -81,6 +82,12 @@ void AXComCharacter::HealActor(AXComCharacter* character)
 {
 	character->hp +=this->heal;
 	if (character->hp > character->hpMax)character->hp = character->hpMax;
+}
+
+bool AXComCharacter::IsDead()
+{
+	UFonctionLibraryLog::AddLog(tEvent, FString::SanitizeFloat(this->hp));
+	return this->hp <= 0.0 ;
 }
 
 
