@@ -23,6 +23,7 @@ https://www.gamedevmarket.net/asset/vending-machine-310/
 https://www.gamedevmarket.net/asset/vending-machine-310/
 
 -- Street --
+https://sketchfab.com/3d-models/roadworks-barrier-074f4faae4604984a813a68eae152e1b
 https://opengameart.org/content/lamp
 - mis : https://opengameart.org/content/gas-wall-lantern-3d-model
 https://sketchfab.com/3d-models/victorian-street-lamp-d4006d2762ab434cb262d46d69433f1f
@@ -52,7 +53,8 @@ https://opengameart.org/content/chaingun-pistol-rifle-shotgun-shots
 https://opengameart.org/content/shotgun-shoot-reload
 https://opengameart.org/content/door-open-door-close-set
 https://www.zapsplat.com/
-
+ui:
+https://gx310.itch.io/pixel-art-hp-bar
 weapons :
 https://sketchfab.com/3d-models/low-poly-ak-205-6886a1dc98b4411fa74468bdfda9e8e2
 https://sketchfab.com/3d-models/low-poly-ak-109-8f701898b61f4ae19547af53acedafd9
