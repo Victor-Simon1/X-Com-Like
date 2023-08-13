@@ -13,10 +13,8 @@ UItemDmgBehavior::UItemDmgBehavior() {
 void UItemDmgBehavior::ConsumeItem(AXComHerosCharacter* player) 
 {
 	UItemBehavior::ConsumeItem(player);
-	//Player.SetD
-	//Cast<AXComHerosCharacter>(player)->hp;
 	player->atk+= valuePourcent*player->atk;
-	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("Dmg"));
+	
 }
 
 void UItemDmgBehavior::MyOverlapItem()
