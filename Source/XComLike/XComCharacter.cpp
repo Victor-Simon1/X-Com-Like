@@ -15,9 +15,7 @@ AXComCharacter::AXComCharacter()
 void AXComCharacter::OnConstruction(const FTransform& Transform)
 {
 	
-	/*FYourStruct* outRow = FDataTableRowHandle.DataTable->FindRow<FYourStruct>(LocalRowName, "");
-	hp = outRow->hp;
-	*/
+
 }
 // Called when the game starts or when spawned
 void AXComCharacter::BeginPlay()
