@@ -88,4 +88,9 @@ bool AXComCharacter::IsDead()
 	return this->hp <= 0.0 ;
 }
 
+float AXComCharacter::GetRatioHP()
+{
+	return this->hp / this->hpMax;
+}
+
 

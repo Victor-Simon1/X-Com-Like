@@ -59,4 +59,6 @@ public:
 	void HealActor(AXComCharacter *character);
 	UFUNCTION(BlueprintCallable)
 	bool IsDead();
+	UFUNCTION(BlueprintCallable)
+	float GetRatioHP();
 };
